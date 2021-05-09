@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CallbackActivity">
+
+    <TextView
+        android:id="@+id/resultPass"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/design_default_color_secondary"
+        android:textSize="30sp"
+        android:text="send success"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/resultError"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f5e03b"
+        app:layout_constraintTop_toTopOf="@+id/resultPass"
+        android:textAlignment="center"
+        android:text="send error"
+        android:textColor="@color/black"
+        android:textSize="30sp">
+
+    </TextView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
